@@ -10,6 +10,10 @@ function setup()
 {
     canvas=createCanvas(420,350);
     canvas.center();
+
+    video=createCapture(VIDEO);
+    video.hide();
+    video.size(420,350);
 }
 
 function draw()
@@ -30,4 +34,4 @@ function modelLoaded()
     video.loop();
     video.speed(1);
     video.volume(0);
-}
+} 
